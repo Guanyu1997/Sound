@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TPEQk4Za6fxm8yQoHmNsPywHfiszBTlEa/9hfbRWssGf2Baj7Mhh1lBi80vByNyZV0XiHv+YsP6pkCQ7Q3kkcg==",
+  "dgSpecHash": "c4kvKeivEE4XJkuzhJUDrKkAD7JWlRS11nRbjbo2Ehlc+idwY7aShT8ukcTgMWulwgttzP6M73h03hoIllz31Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj",
+  "projectFilePath": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\d0lle\\.nuget\\packages\\grasshopper\\7.13.21348.13001\\grasshopper.7.13.21348.13001.nupkg.sha512",
     "C:\\Users\\d0lle\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

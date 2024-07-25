@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\",
+  "WorkspaceRootPath": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|c:\\users\\d0lle\\desktop\\3d_audio_visualization\\audio_visualization\\audio_visualization\\audio_visualizationcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\audio_visualizationcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|c:\\users\\d0lle\\desktop\\githubc#\\3d_audio_visualization\\audio_visualization\\audio_visualization\\audioconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\audioconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,12 +19,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Audio_VisualizationComponent.cs",
-              "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_VisualizationComponent.cs",
-              "RelativeDocumentMoniker": "Audio_Visualization\\Audio_VisualizationComponent.cs",
-              "ToolTip": "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_VisualizationComponent.cs",
-              "RelativeToolTip": "Audio_Visualization\\Audio_VisualizationComponent.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAUAAAAMAAAA",
+              "Title": "AudioConverter.cs",
+              "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\AudioConverter.cs",
+              "RelativeDocumentMoniker": "Audio_Visualization\\AudioConverter.cs",
+              "ToolTip": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\AudioConverter.cs",
+              "RelativeToolTip": "Audio_Visualization\\AudioConverter.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAewDkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T11:30:32.111Z",
               "EditorCaption": ""

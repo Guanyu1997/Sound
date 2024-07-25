@@ -4,11 +4,14 @@ using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
 using NAudio;
+using NAudio.CoreAudioApi;
+using Eto.Forms;
+using System.Linq;
 
 namespace Audio_Visualization
 {
-    public class Audio_VisualizationComponent : GH_Component
-    {
+    public class AudioConverter : GH_Component
+    {   
         /// <summary>
         /// Each implementation of GH_Component must provide a public 
         /// constructor without any arguments.
@@ -16,10 +19,10 @@ namespace Audio_Visualization
         /// Subcategory the panel. If you use non-existing tab or panel names, 
         /// new tabs/panels will automatically be created.
         /// </summary>
-        public Audio_VisualizationComponent()
+        public AudioConverter()
           : base("Audio_Converter", "AudiConv",
             "Description",
-            "Visualization", "Audio")
+            "AudioVisualization", "Audio")
         {
         }
 
@@ -35,6 +38,7 @@ namespace Audio_Visualization
         /// </summary>
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
+            pManager.AddIntegerParameter("Volume", "vol", "Volume of Audio", GH_ParamAccess.item);
         }
 
         /// <summary>
@@ -44,6 +48,28 @@ namespace Audio_Visualization
         /// to store data in output parameters.</param>
         protected override void SolveInstance(IGH_DataAccess DA)
         {
+
+            MMDeviceEnumerator enumerator = new MMDeviceEnumerator();
+            var devices = enumerator.EnumerateAudioEndPoints(DataFlow.All, DeviceState.Active);
+            string targetDeviceName = "Lautsprecher (Realtek(R) Audio)";
+
+            // Find the device by its friendly name
+            MMDevice selectedDevice = devices.FirstOrDefault(d => d.FriendlyName.Contains(targetDeviceName));
+            int maxMasterValue = 0;
+
+            if (selectedDevice != null)
+            {
+
+     
+                maxMasterValue =  (int)(Math.Round(selectedDevice.AudioMeterInformation.MasterPeakValue * 100));
+
+            }
+            else
+            {
+                throw new Exception("Device not found.");
+            }
+
+            DA.SetData("Volume", maxMasterValue);
         }
 
         /// <summary>

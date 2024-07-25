@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj": {}
+    "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj": {}
   },
   "projects": {
-    "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj": {
+    "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj",
+        "projectUniqueName": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj",
         "projectName": "Audio_Visualization",
-        "projectPath": "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj",
+        "projectPath": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj",
         "packagesPath": "C:\\Users\\d0lle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\obj\\",
+        "outputPath": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

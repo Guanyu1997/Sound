@@ -12,5 +12,14 @@
     <PackageReference Include="Grasshopper" Version="7.13.21348.13001" IncludeAssets="compile;build" />
     <PackageReference Include="NAudio" Version="2.2.1" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="NAudio">
+      <HintPath>..\..\naudio\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="RhinoCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Rhino 7\System\RhinoCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>
