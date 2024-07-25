@@ -50,17 +50,19 @@ namespace Audio_Visualization
         {
 
             MMDeviceEnumerator enumerator = new MMDeviceEnumerator();
-            var devices = enumerator.EnumerateAudioEndPoints(DataFlow.All, DeviceState.Active);
-            string targetDeviceName = "Lautsprecher (Realtek(R) Audio)";
+          //  var devices = enumerator.EnumerateAudioEndPoints(DataFlow.All, DeviceState.Active);
+          //  string targetDeviceName = "Lautsprecher (Realtek(R) Audio)";
 
             // Find the device by its friendly name
-            MMDevice selectedDevice = devices.FirstOrDefault(d => d.FriendlyName.Contains(targetDeviceName));
+            //MMDevice selectedDevice = devices.FirstOrDefault(d => d.FriendlyName.Contains(targetDeviceName));
+
+            MMDevice selectedDevice = enumerator.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia);
+
             int maxMasterValue = 0;
 
             if (selectedDevice != null)
             {
-
-     
+    
                 maxMasterValue =  (int)(Math.Round(selectedDevice.AudioMeterInformation.MasterPeakValue * 100));
 
             }
