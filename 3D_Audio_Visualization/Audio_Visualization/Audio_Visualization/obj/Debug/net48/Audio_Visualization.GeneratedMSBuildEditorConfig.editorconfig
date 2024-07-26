@@ -1,5 +1,9 @@
 is_global = true
 build_property.RootNamespace = Audio_Visualization
+<<<<<<< Updated upstream
 build_property.ProjectDir = C:\Users\d0lle\Desktop\3D_Audio_Visualization\Audio_Visualization\Audio_Visualization\
+=======
+build_property.ProjectDir = D:\OneDrive - Politecnico di Milano\Stuttgart\Sound\Sound\3D_Audio_Visualization\Audio_Visualization\Audio_Visualization\
+>>>>>>> Stashed changes
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

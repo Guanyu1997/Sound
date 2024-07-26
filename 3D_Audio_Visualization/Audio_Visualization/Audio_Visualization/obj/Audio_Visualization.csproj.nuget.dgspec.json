@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj": {}
   },
   "projects": {
@@ -12,12 +13,25 @@
         "projectPath": "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj",
         "packagesPath": "C:\\Users\\d0lle\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\d0lle\\Desktop\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\obj\\",
+=======
+    "D:\\OneDrive - Politecnico di Milano\\Stuttgart\\Sound\\Sound\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj": {}
+  },
+  "projects": {
+    "D:\\OneDrive - Politecnico di Milano\\Stuttgart\\Sound\\Sound\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\OneDrive - Politecnico di Milano\\Stuttgart\\Sound\\Sound\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj",
+        "projectName": "Audio_Visualization",
+        "projectPath": "D:\\OneDrive - Politecnico di Milano\\Stuttgart\\Sound\\Sound\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_Visualization.csproj",
+        "packagesPath": "C:\\Users\\44450\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive - Politecnico di Milano\\Stuttgart\\Sound\\Sound\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\d0lle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\44450\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,7 +74,7 @@
               "version": "[2.2.1, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
