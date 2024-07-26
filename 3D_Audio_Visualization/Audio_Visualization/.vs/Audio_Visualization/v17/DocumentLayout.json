@@ -3,14 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Centriod_Points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Partical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|c:\\users\\d0lle\\desktop\\githubc#\\3d_audio_visualization\\audio_visualization\\audio_visualization\\geometryvisualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\geometryvisualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|c:\\users\\d0lle\\desktop\\githubc#\\3d_audio_visualization\\audio_visualization\\audio_visualization\\maincomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\maincomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Particals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -24,16 +18,22 @@
       "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\wavevisualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|c:\\users\\d0lle\\desktop\\githubc#\\3d_audio_visualization\\audio_visualization\\audio_visualization\\maincomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\maincomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|c:\\users\\d0lle\\desktop\\githubc#\\3d_audio_visualization\\audio_visualization\\audio_visualization\\geometryvisualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\geometryvisualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|c:\\users\\d0lle\\desktop\\githubc#\\3d_audio_visualization\\audio_visualization\\audio_visualization\\audio_visualizationinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\audio_visualizationinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|c:\\users\\d0lle\\desktop\\githubc#\\3d_audio_visualization\\audio_visualization\\audio_visualization\\audioconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\audioconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|c:\\users\\d0lle\\desktop\\githubc#\\3d_audio_visualization\\audio_visualization\\audio_visualization\\audio_visualizationinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{561E208C-78BB-4146-9DAF-30C1F0EF0B21}|Audio_Visualization\\Audio_Visualization.csproj|solutionrelative:audio_visualization\\audio_visualizationinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Centriod_Points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Partical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,50 +43,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GeometryVisualization.cs",
               "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\GeometryVisualization.cs",
               "RelativeDocumentMoniker": "Audio_Visualization\\GeometryVisualization.cs",
               "ToolTip": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\GeometryVisualization.cs",
               "RelativeToolTip": "Audio_Visualization\\GeometryVisualization.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABIAAABQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T08:14:36.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Partical.cs",
               "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Partical.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Plugin01\\WS_Plugin\\WS_Plugin\\Partical.cs",
               "ToolTip": "C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Partical.cs",
               "RelativeToolTip": "..\\..\\..\\Plugin01\\WS_Plugin\\WS_Plugin\\Partical.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAC4AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T08:14:09.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Particals.cs",
               "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Particals.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Plugin01\\WS_Plugin\\WS_Plugin\\Particals.cs",
               "ToolTip": "C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Particals.cs",
               "RelativeToolTip": "..\\..\\..\\Plugin01\\WS_Plugin\\WS_Plugin\\Particals.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T08:00:43.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Visualization.cs",
               "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Visualization.cs",
               "RelativeDocumentMoniker": "Audio_Visualization\\Visualization.cs",
@@ -99,20 +99,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "WaveVisualization.cs",
               "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\WaveVisualization.cs",
               "RelativeDocumentMoniker": "Audio_Visualization\\WaveVisualization.cs",
               "ToolTip": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\WaveVisualization.cs",
               "RelativeToolTip": "Audio_Visualization\\WaveVisualization.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T07:45:32.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Centriod_Points.cs",
               "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\Plugin01\\WS_Plugin\\WS_Plugin\\Centriod_Points.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Plugin01\\WS_Plugin\\WS_Plugin\\Centriod_Points.cs",
@@ -125,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Audio_VisualizationInfo.cs",
               "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\Audio_VisualizationInfo.cs",
               "RelativeDocumentMoniker": "Audio_Visualization\\Audio_VisualizationInfo.cs",
@@ -138,20 +138,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "MainComponent.cs",
               "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\MainComponent.cs",
               "RelativeDocumentMoniker": "Audio_Visualization\\MainComponent.cs",
               "ToolTip": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\MainComponent.cs",
               "RelativeToolTip": "Audio_Visualization\\MainComponent.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAiwEgAAAAYAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAcwEQAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T20:19:34.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "AudioConverter.cs",
               "DocumentMoniker": "C:\\Users\\d0lle\\Desktop\\GitHubC#\\3D_Audio_Visualization\\Audio_Visualization\\Audio_Visualization\\AudioConverter.cs",
               "RelativeDocumentMoniker": "Audio_Visualization\\AudioConverter.cs",

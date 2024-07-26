@@ -67,12 +67,18 @@ namespace Audio_Visualization
             DA.GetData("Volume", ref volume);
 
             List<Surface> surfaces = new List<Surface>();
+            List<Point3d> points = new List<Point3d>();
+            List<Box> boxes = new List<Box>();  
 
             switch (graphicStyle)
             {
                 case  1:
 
-                    WaveVisualization geometries= new WaveVisualization();
+                    WaveVisualization geometries= new WaveVisualization(srf1,intensity,volume);
+
+                    boxes = geometries.GetBoxes();
+
+                    DA.SetDataList("GeometryVisuals", boxes);
                     break;
 
                 default:

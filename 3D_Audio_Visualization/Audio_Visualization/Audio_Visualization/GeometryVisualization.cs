@@ -14,9 +14,9 @@ namespace Audio_Visualization
 
         public int volume { get; set; }
 
-        private Random r = new Random();
+       // private Random r = new Random();
 
-        public GeometryVisualization(Surface srf, int intensity, int volume) { }
+       public GeometryVisualization(Surface srf, int intensity, int volume) { }
 
 
     }
