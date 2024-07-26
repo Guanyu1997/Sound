@@ -7,11 +7,18 @@ using NAudio;
 using NAudio.CoreAudioApi;
 using Eto.Forms;
 using System.Linq;
+using MathNet.Numerics;
+using NAudio.Wave;
+using MathNet.Numerics.IntegralTransforms;
 
 namespace Audio_Visualization
 {
     public class AudioConverter : GH_Component
-    {   
+    {
+        public WaveInEvent waveIn;
+        public float[] audioBuffer;
+        public int bufferSize = 1024;
+        //public double frequenzy;
         /// <summary>
         /// Each implementation of GH_Component must provide a public 
         /// constructor without any arguments.
@@ -50,11 +57,6 @@ namespace Audio_Visualization
         {
 
             MMDeviceEnumerator enumerator = new MMDeviceEnumerator();
-          //  var devices = enumerator.EnumerateAudioEndPoints(DataFlow.All, DeviceState.Active);
-          //  string targetDeviceName = "Lautsprecher (Realtek(R) Audio)";
-
-            // Find the device by its friendly name
-            //MMDevice selectedDevice = devices.FirstOrDefault(d => d.FriendlyName.Contains(targetDeviceName));
 
             MMDevice selectedDevice = enumerator.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia);
 
@@ -70,9 +72,60 @@ namespace Audio_Visualization
             {
                 throw new Exception("Device not found.");
             }
+     
 
             DA.SetData("Volume", maxMasterValue);
+           
+            waveIn = new WaveInEvent();
+            waveIn.BufferMilliseconds = 50; // Set buffer size
+            waveIn.NumberOfBuffers = 1; // Set number of buffers
+            waveIn.WaveFormat = new WaveFormat(44100, 16, 1); // 44.1 kHz, 16-bit, mono
+
+            audioBuffer = new float[bufferSize];
+            waveIn.DataAvailable += OnDataAvailable;
+            waveIn.StartRecording();
+           
         }
+
+        private void OnDataAvailable(object sender, WaveInEventArgs e)
+        {
+            // Convert byte buffer to float samples
+            int sampleCount = e.BytesRecorded / sizeof(short);
+            short[] shortBuffer = new short[sampleCount];
+            Buffer.BlockCopy(e.Buffer, 0, shortBuffer, 0, e.BytesRecorded);
+            for (int i = 0; i < sampleCount; i++)
+            {
+                audioBuffer[i] = shortBuffer[i] / 32768f; // Convert to float
+            }
+
+            // Perform FFT
+            var fft = new Complex32[bufferSize];
+            for (int i = 0; i < bufferSize; i++)
+            {
+                fft[i] = new Complex32(audioBuffer[i], 0);
+            }
+
+            Fourier.Forward(fft, FourierOptions.Matlab);
+
+            // Analyze frequency bands
+            AnalyzeFrequencyBands(fft);//, ref frequenzy
+        }
+
+        private void AnalyzeFrequencyBands(Complex32[] fftResult)//, ref double frequenzy
+        {
+          
+
+            for (int i = 0; i < fftResult.Length / 2; i++)
+            {
+                double frequenzy = (i * 44100.0) / bufferSize;
+
+                Console.WriteLine(frequenzy.ToString());
+                
+            }
+
+      
+        }
+        
 
         /// <summary>
         /// Provides an Icon for every component that will be visible in the User Interface.

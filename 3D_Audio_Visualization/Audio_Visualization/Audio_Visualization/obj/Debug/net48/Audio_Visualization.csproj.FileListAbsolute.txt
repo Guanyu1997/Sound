@@ -19,3 +19,7 @@ C:\Users\d0lle\Desktop\GitHubC#\3D_Audio_Visualization\Audio_Visualization\Audio
 C:\Users\d0lle\Desktop\GitHubC#\3D_Audio_Visualization\Audio_Visualization\Audio_Visualization\obj\Debug\net48\Audio_Vi.4A5C434E.Up2Date
 C:\Users\d0lle\Desktop\GitHubC#\3D_Audio_Visualization\Audio_Visualization\Audio_Visualization\obj\Debug\net48\Audio_Visualization.gha
 C:\Users\d0lle\Desktop\GitHubC#\3D_Audio_Visualization\Audio_Visualization\Audio_Visualization\obj\Debug\net48\Audio_Visualization.pdb
+C:\Users\d0lle\Desktop\GitHubC#\3D_Audio_Visualization\Audio_Visualization\Audio_Visualization\bin\Debug\net48\runtimes\win-x64\native\libiomp5md.dll
+C:\Users\d0lle\Desktop\GitHubC#\3D_Audio_Visualization\Audio_Visualization\Audio_Visualization\bin\Debug\net48\runtimes\win-x64\native\libMathNetNumericsMKL.dll
+C:\Users\d0lle\Desktop\GitHubC#\3D_Audio_Visualization\Audio_Visualization\Audio_Visualization\bin\Debug\net48\MathNet.Numerics.dll
+C:\Users\d0lle\Desktop\GitHubC#\3D_Audio_Visualization\Audio_Visualization\Audio_Visualization\bin\Debug\net48\MathNet.Numerics.Providers.MKL.dll

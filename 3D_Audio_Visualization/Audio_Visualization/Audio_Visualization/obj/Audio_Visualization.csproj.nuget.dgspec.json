@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[7.13.21348.13001, )"
             },
+            "MathNet.Numerics.MKL.Win-x64": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "NAudio": {
               "target": "Package",
               "version": "[2.2.1, )"
