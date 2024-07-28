@@ -1,6 +1,7 @@
 ﻿using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
@@ -12,12 +13,13 @@ namespace Audio_Visualization
     {
         List<Point3d> pts = new List<Point3d>();
         List<Box> boxes = new List<Box>();
+        double remapVol = 0;
         public WaveVisualization(Surface srf, int intensity, int volume) : base(srf, intensity, volume)
         {
 
 
 
-            double remapVol = volume / 100;
+            remapVol = (double)volume / 1000;
 
             Brep brepSrf = srf.ToBrep();
 
@@ -48,13 +50,15 @@ namespace Audio_Visualization
             Point3d pt0 = corners[0];
             Point3d pt1 = corners[2];
 
-            int rows = 20;
-            int columns = 20;//predefined for testing
-            double bX = edgelength1 / rows;
-            double bY = edgelength2 / columns;
-            double bZ = edgelength2 / (rows + columns);
-            double factor = (1 - remapVol);
-            double factor1 = remapVol;
+            //Calculate Edge Points maybe in a seperat method
+
+            int rows = 30;
+            int columns = 30;//predefined for testing
+            double bX = (edgelength1-1) / rows;
+            double bY = (edgelength2-1) / columns;
+            double bZ = edgelength2 / (rows + columns) * intensity;
+            double factor = remapVol;
+            double factor1 = 0;
 
 
 
@@ -83,7 +87,7 @@ namespace Audio_Visualization
                 double h1 = Math.Abs(Math.Sin(p.Origin.X * factor) + Math.Cos(p.Origin.Y * factor)) * bZ;
                 double h2 = Math.Abs(Math.Sin(pts[k].X * factor1) + Math.Cos(pts[k].Y * factor1)) * bZ;
 
-                Interval bdz = new Interval(-h2, h1);
+                Interval bdz = new Interval(0, h1);
 
                 Box b = new Box(p, bdx, bdy, bdz);
                 boxes.Add(b);
@@ -94,8 +98,11 @@ namespace Audio_Visualization
         {
             return this.boxes;
         }
-
-
+        public double GetVol()
+        {
+            return this.remapVol;
         }
+
+    }
     }
 

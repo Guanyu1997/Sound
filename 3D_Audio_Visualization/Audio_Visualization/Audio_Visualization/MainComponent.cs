@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Drawing;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using Grasshopper.Kernel;
 using Rhino.DocObjects;
 using Rhino.Geometry;
+using Grasshopper.Kernel.Types;
 
 namespace Audio_Visualization
 {
@@ -19,6 +22,16 @@ namespace Audio_Visualization
         {
         }
 
+
+        //public double Map(double s, double a1, double a2, double b1, double b2)
+        //{
+        //    return b1 + (s - a1) * (b2 - b1) / (a2 - a1);
+        //}
+        public int Map(int x, int in_min, int out_min, int in_max, int out_max)
+        {
+            return (((x - in_min) * (out_max - out_min)) / (in_max - in_min)) + out_min;
+        }
+
         /// <summary>
         /// Registers all the input parameters for this component.
         /// </summary>
@@ -28,7 +41,7 @@ namespace Audio_Visualization
 
             pManager.AddIntegerParameter("GraphicStyle", "GS", "Select Graphical Appearance", GH_ParamAccess.item);
 
-           // pManager.AddIntegerParameter("LightStyle", "LS", "Select Lighting Appearance", GH_ParamAccess.item);
+           //pManager.AddIntegerParameter("LightStyle", "LS", "Select Lighting Appearance", GH_ParamAccess.item);
 
             pManager.AddIntegerParameter("Intensity", "i", "Select wanted Intensity", GH_ParamAccess.item);
 
@@ -43,8 +56,15 @@ namespace Audio_Visualization
         /// </summary>
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
+            pManager.AddNumberParameter("VolumeOut", "vol", "Volume of Audio", GH_ParamAccess.item);
+//this is for debugging
             pManager.AddGeometryParameter("GeometryVisuals", "GeoVisu", "List of Geometries showing", GH_ParamAccess.list);
-           // pManager.AddGeometryParameter("Lightign", "light", "List of lighting data", GH_ParamAccess.list);
+            // pManager.AddGeometryParameter("Lightign", "light", "List of lighting data", GH_ParamAccess.list);
+
+            pManager.AddColourParameter("c", "c", "c", GH_ParamAccess.list);
+
+            pManager.AddIntegerParameter("Tester", "t", "Select Lighting Appearance", GH_ParamAccess.list);
+            pManager.AddIntegerParameter("Tester2", "t2", "Select Lighting Appearance", GH_ParamAccess.list);
 
         }
 
@@ -68,17 +88,59 @@ namespace Audio_Visualization
 
             List<Surface> surfaces = new List<Surface>();
             List<Point3d> points = new List<Point3d>();
-            List<Box> boxes = new List<Box>();  
+            List<Box> boxes = new List<Box>();
+            List<GH_Colour> colors = new List<GH_Colour>();
+
+
+            double volAfter = 0;
 
             switch (graphicStyle)
             {
                 case  1:
 
                     WaveVisualization geometries= new WaveVisualization(srf1,intensity,volume);
+                  
+
 
                     boxes = geometries.GetBoxes();
+                    volAfter = geometries.GetVol();
 
+
+                    List<int> h = new List<int>();
+                    foreach (Box b in boxes)
+                    {
+                        var a = Math.Round(b.Center.Z);
+                        var a1 = Convert.ToInt32(a);
+                        h.Add(a1);
+                    }
+
+                    int min = h.Min();
+                    int max = h.Max();
+
+                    List<int> h2 = new List<int>();
+                    List<Color> colors2 = new List<Color>();
+                    foreach (int h1 in h)
+                    {
+                        
+                        var c = Map(h1, 0,1,70,255);
+                        colors2.Add(Color.FromArgb(255, c, 100, 100));
+                    }
+
+
+                    Rhino.RhinoApp.WriteLine("min is " + min.ToString());
+                    Rhino.RhinoApp.WriteLine("max is " + max.ToString());
+                    //ColorByHeight rgb = new ColorByHeight(srf1, intensity, volume, boxes);
+                    //colors = rgb.GetColors();
+
+
+
+
+
+                    DA.SetData("VolumeOut", volAfter);
                     DA.SetDataList("GeometryVisuals", boxes);
+                    DA.SetDataList("c", colors2);
+                    DA.SetDataList("Tester", h);
+                    DA.SetDataList("Tester2", h2);
                     break;
 
                 default:

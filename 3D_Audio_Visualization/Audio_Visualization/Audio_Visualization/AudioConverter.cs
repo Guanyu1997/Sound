@@ -75,7 +75,7 @@ namespace Audio_Visualization
      
 
             DA.SetData("Volume", maxMasterValue);
-           
+   /*        
             waveIn = new WaveInEvent();
             waveIn.BufferMilliseconds = 50; // Set buffer size
             waveIn.NumberOfBuffers = 1; // Set number of buffers
@@ -84,9 +84,9 @@ namespace Audio_Visualization
             audioBuffer = new float[bufferSize];
             waveIn.DataAvailable += OnDataAvailable;
             waveIn.StartRecording();
-           
+           */
         }
-
+/*
         private void OnDataAvailable(object sender, WaveInEventArgs e)
         {
             // Convert byte buffer to float samples
@@ -125,7 +125,7 @@ namespace Audio_Visualization
 
       
         }
-        
+       */ 
 
         /// <summary>
         /// Provides an Icon for every component that will be visible in the User Interface.
