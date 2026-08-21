@@ -3,9 +3,9 @@ using Grasshopper.Kernel;
 using System;
 using System.Drawing;
 
-namespace Audio_Visualization
+namespace Sound_Visualization
 {
-    public class Audio_VisualizationInfo : GH_AssemblyInfo
+    public class Sound_VisualizationInfo : GH_AssemblyInfo
     {
         public override string Name => "Audio_Visualization";
 
